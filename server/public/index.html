@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+    <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.min.css">
+    <script src="jquery-3.3.1.min.js" charset="utf-8"></script>
+    <script src="client.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="bootstrap/dist/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <h1>To-do List</h1>
+    <form>
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1">What is your task?</span>
+            </div>
+            <input type="text" id="taskIn" class="form-control" placeholder="" aria-label="Username"
+                aria-describedby="basic-addon1">
+        </div>
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1">Did you complete your task?</span>
+            </div>
+            <input type="text" id="actionIn" class="form-control" placeholder="Yes or No" aria-label="Username"
+                aria-describedby="basic-addon1">
+        </div>
+        <button type="button" id="submitButton" class="btn btn-success">Add Task</button>
+    </form>
+    <section>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th scope="col">Task</th>
+                    <th scope="col">Complete?</th>
+                    <th scope="col">Action</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody">
+                
+            </tbody>
+        </table>
+    </section>
+</body>
+</html>
